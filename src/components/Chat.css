@@ -1,0 +1,107 @@
+.chat {
+  flex: 0.65;
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat__header {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid lightgrey;
+  height: 90px;
+  align-items: center;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.chat__headerInfo h3 {
+  font-size: 18px;
+  color: rgb(22, 22, 22);
+}
+.chat__headerInfo p {
+  font-size: 14px;
+  color: rgb(44, 44, 44);
+}
+
+.chat__headerRight {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+.chat__body {
+  flex: 1;
+  overflow-y: scroll;
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  background-repeat: repeat;
+  background-position: center;
+  padding: 10px 30px;
+  overflow-x: hidden;
+}
+
+.chat__message {
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #fff;
+  width: fit-content;
+  border-radius: 3px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: sans-serif;
+  border: 1px solid #b0b0b0;
+}
+
+.chat__message.message__receive {
+  background-color: #c3ec56;
+  margin-left: auto;
+  border: 1px solid #96b939;
+}
+
+.chat__message:last-child {
+  margin-bottom: 0px;
+}
+
+.chat__name {
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  display: block;
+  width: 200px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.chat__timestamp {
+  font-size: xx-small;
+  margin-left: 20px;
+}
+
+.chat__footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  background: rgb(245, 244, 244);
+  border-top: 1px solid lightgrey;
+}
+
+.chat__footer > .emoticon {
+  margin-left: 5px;
+}
+.chat__input {
+  flex: 1;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.chat__sendBtn {
+  margin-right: 5px;
+}
